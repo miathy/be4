@@ -14,13 +14,10 @@ import coding.mentor.entity.Category;
 public class CategoryService{
 
 	public List<Category> getAllCategories()  throws SQLException{
-		Connection conn = null;
-		
-		PreparedStatement ps =null;
-		
+		Connection conn = null;		
+		PreparedStatement ps =null;		
 		ResultSet rs = null;
-		Category category = null;
-		
+		Category category = null;	
 		List<Category> list = new ArrayList<Category>();
 		try {
 			conn = DBUtil.makeConnection();
